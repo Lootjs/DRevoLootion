@@ -1,0 +1,195 @@
+{
+	"categories": {
+		"nearTitle": "Сізге жақын",
+		"nearValue": "Сізге жақын",
+		"popularTitle": "Танымал мекемелер",
+		"popularValue": "Танымал",
+		"promoTitle": "Науқандар",
+		"promoValue": "Науқандар",
+		"bahandiTitle": "Bahandi",
+		"repeatValue": "Тапсырысты қайталау",
+		"repeatTitle": "Тапсырысты қайталау",
+		"recentOrders": "Сіз жақында тапсырыс бердіңіз"
+	},
+	"menu": {
+		"myFavorites": "Менің сүйікті тағамдарым",
+		"productsExceeded": "Сіз науқан бойынша қолжетімді барлық тағамдарды қостыңыз",
+		"productsPromo": "Науқан бойынша тағы {countText}",
+		"cookingTimeIncreased": "Тапсырыс көп. Дайындау уақыты ұзағырақ болады",
+		"product": "Өнім",
+		"productEnded": "Таусылды",
+		"inBasket": "себетте",
+		"dish": "тағам | тағам | тағам",
+		"promo": "Науқандар"
+	},
+	"table": {
+		"informationStatus": {
+			"default": "Үстел нөмірін көрсетіңіз",
+			"selected": "Үстел {name}"
+		},
+		"scanner": {
+			"default": {
+				"title": "QR сканерлеңіз",
+				"text": "Тапсырысты үстеліңізге әкелуі үшін QR сканерлеңіз. Ол үстелде орналасқан."
+			},
+			"selected": {
+				"title": "Сіздің тапсырысыңыз {name} үстелге әкелінеді",
+				"text": "Егер сіз басқа орынға көшсеңіз, жаңа үстелдің QR сканерлеңіз"
+			},
+			"success": "Үстел бекітілді",
+			"error": "Үстел бекітілмеді"
+		}
+	},
+	"qr": {
+		"action": "Сканерлеу"
+	},
+	"filial": {
+		"highLoad": "Мекемеде жүктеме көп",
+		"info": "Ақпарат",
+		"title": "мейрамхана | мейрамхана | мейрамхана"
+	},
+	"search": {
+		"title": "Іздеу",
+		"searchResult": "Іздеу нәтижелері",
+		"searchPlaceholder": "Мекемені іздеу",
+		"searchPlaceholderDefault": "Кез келген нәрсені табу",
+		"searchLabel": "Біз не іздейміз?",
+		"clearHistory": "Іздеу тарихын өшіру"
+	},
+	"cart": {
+		"title": "Себет",
+		"takeawayOrder": "Алып кетуге тапсырыс",
+		"cartEmpty": "Себет бос",
+		"orderTakeAway": "Алып кетуге тапсырыс",
+		"dishFinished": {
+			"title": "Кейбір тағамдар аяқталды",
+			"description": "Тапсырысты жалғастыру үшін оларды жойыңыз"
+		},
+		"wishes": {
+			"title": "Сіздің тілектеріңіз",
+			"description": "Мысалы, қызанақты алып тастау"
+		},
+		"clearModal": "Себетті тазарту",
+		"recommend": "Ұсынамыз",
+		"cookingTime": "~{time} минут",
+		"toPay": "Төлеуге",
+		"receiving": "Алу",
+		"tableIsRequired": "Таңдау керек",
+		"itemInStop": "Өнім қазір жоқ",
+		"itemUnavailable": "Недоступно навынос",
+		"delete": "Жою",
+		"unavailableNotice": {
+			"title": "Кейбір тағамдар алып кетуге қолжетімді емес",
+			"description": "Тапсырысты жалғастыру үшін оларды жойыңыз"
+		}
+	},
+	"map": {
+		"title": "Карта",
+		"filters": {
+			"title": "Сүзгілер",
+			"open": "Ашық"
+		},
+		"list": "Тізім"
+	},
+	"orders": {
+		"title": "Тапсырыстар",
+		"order": "Тапсырыс",
+		"myOrders": "Менің тапсырыстарым",
+		"orderNumber": "Тапсырыс №",
+		"noOrders": "Сізде әлі тапсырыс жоқ",
+		"noOrdersText": "Мұны түзету үшін сатып алуды бастаңыз",
+		"chooseFilial": "Мекемені таңдаңыз",
+		"trackStatus": "Тапсырыс күйін қадағалау",
+		"route": "Бағдар қою",
+		"routeTo": "Жолды бағыттау",
+		"backToMenu": "Мәзірге оралу",
+		"declined": "Тапсырыс жойылды",
+		"orderDeclinedNum": "№{id} тапсырыс жойылды",
+		"orderReady": "№{id} тапсырыс дайын",
+		"orderDeleted": "{name} өнім тапсырыс үшін қолжетімсіз",
+		"orderStopped": "{name} өнім қазір жоқ. Себетті қайта жинауыңызды сұраймыз.",
+		"orderPriceChanged": "{name} өнімнің бағасы өзгерді",
+		"orderDeclineReason": "Өкінішке орай, сіздің тапсырысыңыз {reason} себепті жойылды. Біз ақшаны бірнеше минут ішінде қайтарамыз",
+		"repeatOrder": "Тапсырысты қайталау",
+		"status": {
+			"acceptance": "Жақын арада тапсырысыңыз қабылданады",
+			"cooking": "Тапсырысыңыз кешіктіріліп жатыр, күткеніңіз үшін рақмет",
+			"cookingByMins": "Орташа алғанда бұл тапсырыс {mins} минут ішінде дайындалады",
+			"ready": "Асыңыз дәмді болсын!",
+			"issued": "Тапсырысыңыз берілді",
+			"refund": "Себебі: {reason}"
+		},
+		"type": {
+			"created": "Жасалды",
+			"cooking": "Асханада",
+			"ready": "Дайын",
+			"completed": "Аяқталды",
+			"canceled": "Жойылды"
+		},
+		"continueOrder": "Жарайды, тапсырысты жалғастыру",
+		"cancelOrder": "Болдырмау",
+		"orderDetails": "Тапсырыс туралы мәліметтер",
+		"orderContent": "Тапсырыс құрамы",
+		"timeAndDate": "Уақыты және күні",
+		"difficulties": "Өкінішке орай, қиындықтар туындады",
+		"distanceWarning": "Сіз осы мейрамханадан {distance} жерде орналасқансыз",
+		"filialWarning": "{filial} мейрамханасында {address}{town} мекенжайында"
+	},
+	"services": {
+		"takeaway": "С собой",
+		"express": "В ресторане"
+	},
+	"base": {
+		"takeaway": "Өзіңмен алып кет",
+		"express": "Экспресс",
+		"socialNetworks": "Әлеуметтік желілер",
+		"description": "Сипаттама",
+		"callSzp": "Қамқорлық қызметіне хабарласу",
+		"callFilial": "Мейрамханаға хабарласу",
+		"schedule": "Жұмыс уақыты",
+		"scheduleDaily": "Күнде",
+		"scheduleBreak": "Үзіліс",
+		"scheduleNotAvailible": "Жоқ",
+		"phoneNumber": "Телефон нөмірі",
+		"pickTown": "Қаланы таңдаңыз ",
+		"nothingFound": "Ештеңе табылған жоқ"
+	},
+	"pickLang": "Тілді таңдаңыз",
+	"common": {
+		"from": "-ден",
+		"to": "дейін",
+		"fromTo": "{from }-ден {to} дейін",
+		"closed": "Жабық",
+		"open": "Ашық",
+		"min": "мин",
+		"cancel": "Болдырмау",
+		"total": "Барлығы",
+		"overall": "Жалпы",
+		"discount": "Жеңілдік",
+		"yes": "Иә",
+		"no": "Жоқ",
+		"help": "Көмек",
+		"confirm": "Растау",
+		"status": "Жағдай",
+		"for": "",
+		"more": "Тағы",
+		"townShort": "{town} қ."
+	},
+	"notFound": {
+		"title": "Бұл парақша жоқ",
+		"text": "Бастапқы бетке оралу"
+	},
+	"geo": {
+		"geoRejectedTitle": "Сізде геолокация өшірулі",
+		"geoRejectedText": "Тұрған жеріңізді анықтау үшін, геолокацияны қолдануға рұқсат беріңіз"
+	},
+	"week": {
+		"mon": "Дүйсенбі",
+		"tue": "Сейсенбі",
+		"wed": "Сәрсенбі",
+		"thu": "Бейсенбі",
+		"fri": "Жұма",
+		"sat": "Сенбі",
+		"sun": "Жексенбі"
+	}
+}

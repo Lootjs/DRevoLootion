@@ -2,12 +2,15 @@
   "name": "drevolootion",
   "displayName": "DRevoLootion",
   "description": "More powers for DR project",
-  "publisher": "Loot.js",
-  "version": "0.0.2",
+  "publisher": "Lootjs",
+  "version": "0.0.4",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.72.0"
   },
-  "repository": {},
+  "repository": {
+    "url": "https://github.com/Lootjs/DRevoLootion"
+  },
   "categories": [
     "Other"
   ],
@@ -20,10 +23,19 @@
     "capabilities": {
       "hoverProvider": "true"
     },
-    "commands": [{
-      "command": "drevolootion.helloWorld",
-      "title": "Hello World"
-    }]
+    "configuration": [
+      {
+        "type": "object",
+        "title": "Locales directory",
+        "properties": {
+          "drevolootion.localesDirectory": {
+            "type": "string",
+            "default": "src/assets/locales",
+            "markdownDescription": "Specifies the folder path containing locales files."
+          }
+        }
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",

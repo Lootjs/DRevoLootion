@@ -1,9 +1,8 @@
-# Change Log
+0.0.4
+====
+## What's new
+ - Новая иконка расширения
+ - Возможность указать путь к файлам локализации в настройках
 
-All notable changes to the "drevolootion" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+## Bug Fixes
+ - Исправлен баг, когда на одной линии было несколько переводов. Теперь покажется только нужный перевод, а не первый

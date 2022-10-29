@@ -3,7 +3,7 @@
   "displayName": "DRevoLootion",
   "description": "More powers for DR project",
   "publisher": "Lootjs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.72.0"
@@ -21,12 +21,13 @@
   "main": "./extension.js",
   "contributes": {
     "capabilities": {
-      "hoverProvider": "true"
+      "hoverProvider": "true",
+      "definitionProvider" : "true"
     },
     "configuration": [
       {
         "type": "object",
-        "title": "Locales directory",
+        "title": "Localization settings",
         "properties": {
           "drevolootion.localesDirectory": {
             "type": "string",
@@ -35,7 +36,16 @@
           }
         }
       }
-    ]
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "untranslatedView",
+          "name": "Untranslated strings",
+          "contextualTitle": "Untranslated strings"
+        }
+      ]
+    }
   },
   "scripts": {
     "lint": "eslint .",

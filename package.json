@@ -3,7 +3,7 @@
   "displayName": "DRevoLootion",
   "description": "More powers for DR project",
   "publisher": "Lootjs",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.72.0"
@@ -33,6 +33,11 @@
             "type": "string",
             "default": "src/assets/locales",
             "markdownDescription": "Specifies the folder path containing locales files."
+          },
+          "drevolootion.scanForRawString": {
+            "type": "boolean",
+            "default": false,
+            "markdownDescription": "Scan opened file for raw untranslated strings."
           }
         }
       }

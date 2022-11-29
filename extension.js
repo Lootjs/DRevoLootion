@@ -10,13 +10,15 @@ const {SUPPORTED_LANG_IDS} = require('./src/constants');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	const untranslatedDataProvider = new UntranslatedViewTreeDataProvider();
-	vscode.window.registerTreeDataProvider('untranslatedView', untranslatedDataProvider);
+	if (vscode.workspace.getConfiguration().drevolootion.scanForRawString) {
+		const untranslatedDataProvider = new UntranslatedViewTreeDataProvider();
+		vscode.window.registerTreeDataProvider('untranslatedView', untranslatedDataProvider);
 
-	scanDocumentHandler(vscode.window.activeTextEditor, untranslatedDataProvider);
-    vscode.window.onDidChangeActiveTextEditor(event => 
-		scanDocumentHandler(event, untranslatedDataProvider)
-	);
+		scanDocumentHandler(vscode.window.activeTextEditor, untranslatedDataProvider);
+		vscode.window.onDidChangeActiveTextEditor(event => 
+			scanDocumentHandler(event, untranslatedDataProvider)
+		);
+	}
 	const hoverDisposable = vscode.languages.registerHoverProvider(SUPPORTED_LANG_IDS, hoverHandler);
 	const definitionDisposable = vscode.languages.registerDefinitionProvider(
 		{ pattern: '**/*.{ts,js,vue}', scheme: 'file' }, new DefinitionHandler()

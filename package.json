@@ -3,7 +3,7 @@
   "displayName": "DRevoLootion",
   "description": "More powers for DR project",
   "publisher": "Lootjs",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.72.0"
@@ -38,6 +38,11 @@
             "type": "boolean",
             "default": false,
             "markdownDescription": "Scan opened file for raw untranslated strings."
+          },
+          "drevolootion.defaultLocale": {
+            "type": "string",
+            "default": "ru",
+            "markdownDescription": "Default locale. Using in autocomplete"
           }
         }
       }

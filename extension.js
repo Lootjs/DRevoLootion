@@ -24,7 +24,7 @@ function activate(context) {
 		{ pattern: '**/*.{ts,js,vue}', scheme: 'file' }, new DefinitionHandler()
 	);
 	const completitionDisposable = vscode.languages.registerCompletionItemProvider(
-		{ pattern: '**/*.{ts,js,vue}', scheme: 'file' }, completitionHandler, '.'
+		{ pattern: '**/*.{ts,js,vue}', scheme: 'file' }, completitionHandler, '.', '\''
 	);
 	context.subscriptions.push(hoverDisposable, definitionDisposable, completitionDisposable);
 }

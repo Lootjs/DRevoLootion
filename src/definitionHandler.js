@@ -8,9 +8,6 @@ module.exports = class DefinitionProvider {
         const wordRange = document.getWordRangeAtPosition(position)
         const clickedRelativeUri = document.getText(wordRange)
         const containingLine = document.lineAt(position.line).text;
-        // console.log({ wordRange });
-        // console.log({ clickedRelativeUri });
-        // console.log({ containingLine });
 
         const findReg = containingLine.match(/\$?t\(.*?\)/g);
         if (findReg.length === 0) {
@@ -29,7 +26,7 @@ module.exports = class DefinitionProvider {
         const key = keys[0].replaceAll('\'', '');
         if (key) {
             const localeDir = vscode.Uri.joinPath(ws.uri, vscode.workspace.getConfiguration().drevolootion.localesDirectory);
-            const localeFile = 'ru.json';
+            const localeFile = `${vscode.workspace.getConfiguration().drevolootion.defaultLocale}.json`;
             const fullUri = path.resolve(localeDir.fsPath, localeFile);
             const content = fs.readFileSync(fullUri, 'utf8');
             const dict = JSON.parse(content);

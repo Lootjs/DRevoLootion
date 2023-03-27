@@ -3,7 +3,7 @@
   "displayName": "DRevoLootion",
   "description": "More powers for DR project",
   "publisher": "Lootjs",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.72.0"

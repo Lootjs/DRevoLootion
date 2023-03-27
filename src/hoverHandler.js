@@ -7,7 +7,7 @@ module.exports = {
         const range = document.getWordRangeAtPosition(position);
         const word = document.getText(range);
         const line = document.lineAt(position.line);
-        const findReg = line.text.match(/\$?t\(.*?\)/g);
+        const findReg = line.text.match(/ \$?t\(.*?\)/g);
         if (findReg.length > 0) {
             const findHoveredFunctionInvoke = findReg.find(part => part.indexOf(word) !== -1);
             const fnInvoke = findHoveredFunctionInvoke || findReg[0];

@@ -4,6 +4,7 @@ const {SUPPORTED_LANG_IDS} = require('./constants');
 
 const scanDocumentHandler = (event, dataProvider) => {
     const workspaceFolders = vscode.workspace.workspaceFolders;
+
     let excludeFile = false;
 
     if (workspaceFolders.length > 0) {
@@ -11,6 +12,11 @@ const scanDocumentHandler = (event, dataProvider) => {
         const localeDir = vscode.Uri.joinPath(ws.uri, vscode.workspace.getConfiguration().drevolootion.localesDirectory);
 
         excludeFile = event.document.uri.path.indexOf(localeDir.path) !== -1
+    }
+
+    if (!excludeFile) {
+        const filename = event.document.uri.path.split('/').pop();
+        excludeFile = filename.indexOf('.spec.') !== -1
     }
 
     if (!SUPPORTED_LANG_IDS.includes(event.document.languageId) || excludeFile) {

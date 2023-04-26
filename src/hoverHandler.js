@@ -14,7 +14,7 @@ module.exports = {
         }
 
         const prevSymbol = line.text.indexOf(findReg[0]) - 1;
-        const allowedSymbols = ['', ' ', '$', '{']
+        const allowedSymbols = ['', ' ', '$', '{', '(']
 
         if (!allowedSymbols.includes(line.text[prevSymbol])) {
             return;

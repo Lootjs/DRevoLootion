@@ -2,6 +2,9 @@
 
 VSCode Extension for rapidly developing i18n projects
 
+## Demo
+https://stackblitz.com/~/github.com/Lootjs/demo_vscode_i18n-quickview
+
 ## Features
 - Displaying all translations when hovering over a translate key (e.g. 'common.yes').
 - CTRL + click on a translation key opens the localization file and positions the cursor at the necessary line.

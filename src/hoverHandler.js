@@ -3,18 +3,18 @@ const fs = require('fs');
 const { findTranslation } = require('./helpers');
 
 module.exports = {
-    async provideHover(document, position) {
-        const range = document.getWordRangeAtPosition(position);
-        const word = document.getText(range);
-        const line = document.lineAt(position.line);
+    async provideHover(hoveredDoc, position) {
+        const range = hoveredDoc.getWordRangeAtPosition(position);
+        const word = hoveredDoc.getText(range);
+        const line = hoveredDoc.lineAt(position.line);
         const findReg = line.text.match(/t\(.*?\)/g);
 
-        if (findReg.length === 0) {
+        if (!findReg || findReg.length === 0) {
             return;
         }
 
         const prevSymbol = line.text.indexOf(findReg[0]) - 1;
-        const allowedSymbols = ['', ' ', '$', '{', '(']
+        const allowedSymbols = ['', ' ', '\t', '$', '{', '(', undefined]
 
         if (!allowedSymbols.includes(line.text[prevSymbol])) {
             return;

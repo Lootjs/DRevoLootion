@@ -3,7 +3,7 @@
   "displayName": "i18n-quickview",
   "description": "i18n-quickview enhances i18n workflows with features like hover translations, CTRL + click navigation to localization files, and translate key autocomplete",
   "publisher": "Lootjs",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.72.0"
@@ -15,8 +15,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onLanguage:javascript",
-    "onLanguage:vue"
+    "onStartupFinished"
   ],
   "main": "./extension.js",
   "contributes": {

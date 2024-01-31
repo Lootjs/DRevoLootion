@@ -4,10 +4,10 @@ const fs = require('fs');
 const { findTranslation } = require('./helpers');
 
 module.exports = class DefinitionProvider {
-    provideDefinition(document, position) {
-        const wordRange = document.getWordRangeAtPosition(position)
-        const clickedRelativeUri = document.getText(wordRange)
-        const containingLine = document.lineAt(position.line).text;
+    provideDefinition(defDocument, position) {
+        const wordRange = defDocument.getWordRangeAtPosition(position)
+        const clickedRelativeUri = defDocument.getText(wordRange)
+        const containingLine = defDocument.lineAt(position.line).text;
 
         const findReg = containingLine.match(/\$?t\(.*?\)/g);
         if (findReg.length === 0) {

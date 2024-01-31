@@ -4,8 +4,8 @@ const fs = require('fs');
 const { findTranslation } = require('./helpers');
 
 module.exports = {
-    provideCompletionItems(document, position) {
-        const linePrefix = document.lineAt(position).text.substring(0, position.character);
+    provideCompletionItems(doc, position) {
+        const linePrefix = doc.lineAt(position).text.substring(0, position.character);
         const findReg = linePrefix.match(/\$?t\((.*)/);
 
         if (findReg.length < 1) {

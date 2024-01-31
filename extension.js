@@ -21,10 +21,10 @@ function activate(context) {
 	}
 	const hoverDisposable = vscode.languages.registerHoverProvider(SUPPORTED_LANG_IDS, hoverHandler);
 	const definitionDisposable = vscode.languages.registerDefinitionProvider(
-		{ pattern: '**/*.{ts,js,vue}', scheme: 'file' }, new DefinitionHandler()
+		{ pattern: '**/*.{ts,js,vue,jsx,tsx}', scheme: 'file' }, new DefinitionHandler()
 	);
 	const completitionDisposable = vscode.languages.registerCompletionItemProvider(
-		{ pattern: '**/*.{ts,js,vue}', scheme: 'file' }, completitionHandler, '.', '\''
+		{ pattern: '**/*.{ts,js,vue,jsx,tsx}', scheme: 'file' }, completitionHandler, '.', '\''
 	);
 	context.subscriptions.push(hoverDisposable, definitionDisposable, completitionDisposable);
 }

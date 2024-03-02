@@ -1,9 +1,10 @@
 const vscode = require('vscode');
 const fs = require('fs');
-const { findTranslation } = require('./helpers');
+const { findTranslation, hasInlineTranslations, extractTranslations } = require('./helpers');
 
 module.exports = {
     async provideHover(hoveredDoc, position) {
+        const content = hoveredDoc.getText();
         const range = hoveredDoc.getWordRangeAtPosition(position);
         const word = hoveredDoc.getText(range);
         const line = hoveredDoc.lineAt(position.line);
@@ -24,6 +25,15 @@ module.exports = {
         const fnInvoke = findHoveredFunctionInvoke || findReg[0];
         const keys = fnInvoke.match(/'(.*?)'/);
         const key = keys[0].replaceAll('\'', '');
+
+        if (hasInlineTranslations(content)) {
+            const inlinedTranslation = extractTranslations(key, content);
+
+            if (inlinedTranslation) {
+                return inlinedTranslation;
+            }
+        }
+        
         let messages = {};
         const workspaceFolders = vscode.workspace.workspaceFolders;
         let mdString = '';

@@ -1,3 +1,8 @@
+0.0.16
+====
+## What's new
+ - Added support for Inline-Translations (https://vue-i18n.intlify.dev/guide/advanced/sfc.html)
+
 0.0.9
 ====
 ## What's new

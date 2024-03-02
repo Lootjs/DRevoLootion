@@ -3,7 +3,7 @@
   "displayName": "i18n-quickview",
   "description": "i18n-quickview enhances i18n workflows with features like hover translations, CTRL + click navigation to localization files, and translate key autocomplete",
   "publisher": "Lootjs",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.72.0"
@@ -40,7 +40,7 @@
           },
           "drevolootion.defaultLocale": {
             "type": "string",
-            "default": "ru",
+            "default": "en",
             "markdownDescription": "Default locale. Using in autocomplete"
           }
         }

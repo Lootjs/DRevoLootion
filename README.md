@@ -1,4 +1,4 @@
-# DRevoLootion
+# i18n QuickView
 
 VSCode Extension for rapidly developing i18n projects
 
